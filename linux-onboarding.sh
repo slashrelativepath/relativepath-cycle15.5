@@ -8,3 +8,10 @@ else
   sudo apt install -y nano
 fi
 
+if (git --version)
+then
+  echo "Git already installed"
+else
+  echo "installing Git for you..."
+  sudo apt install -y git
+fi
