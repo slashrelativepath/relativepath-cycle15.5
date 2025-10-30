@@ -1,5 +1,5 @@
 # homebrew should be installed
-if (brew --version)
+if (/opt/homebrew/bin/brew --version)
 then
   echo "homebrew is already installed."
 else
@@ -14,7 +14,7 @@ then
   echo "nano is already installed."
 else
   echo "installing nano..."
-  brew install nano
+  /opt/homebrew/bin/brew install nano
 fi
 
 # git should be installed
@@ -23,6 +23,6 @@ then
   echo "git is already installed."
 else
   echo "installing git..."
-  brew install git
+  /opt/homebrew/bin/brew install git
 fi
 
