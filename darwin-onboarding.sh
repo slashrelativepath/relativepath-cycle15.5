@@ -1,5 +1,5 @@
 # homebrew should be installed
-if ($(if (test "$(arch)" = "arm64"); then echo '/opt/homebrew/bin/'; else echo 'usr/local/bin/'; fi)/brew --versionbrew --version)
+if ($(if (test "$(arch)" = "arm64"); then echo '/opt/homebrew/bin/'; else echo 'usr/local/bin/'; fi)/brew  --version)
 then
   echo "homebrew is already installed."
 else
@@ -14,7 +14,7 @@ then
   echo "nano is already installed."
 else
   echo "installing nano..."
-  $(if (test "$(arch)" = "arm64"); then echo '/opt/homebrew/bin/'; else echo 'usr/local/bin/'; fi)/brew --versionbrew install nano
+  $(if (test "$(arch)" = "arm64"); then echo '/opt/homebrew/bin/'; else echo 'usr/local/bin/'; fi)/brew install nano
 fi
 
 # git should be installed
@@ -23,6 +23,6 @@ then
   echo "git is already installed."
 else
   echo "installing git..."
-  $(if (test "$(arch)" = "arm64"); then echo '/opt/homebrew/bin/'; else echo 'usr/local/bin/'; fi)/brew --versionbrew install git
+  $(if (test "$(arch)" = "arm64"); then echo '/opt/homebrew/bin/'; else echo 'usr/local/bin/'; fi)/brew install git
 fi
 
