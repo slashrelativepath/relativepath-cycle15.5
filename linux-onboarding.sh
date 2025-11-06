@@ -15,3 +15,12 @@ else
   echo "installing Git for you..."
   sudo apt install -y git
 fi
+
+if (multipass version)
+then
+  echo "multipass already installed"
+else
+  echo "installing multipass"
+  sudo snap install multipass
+fi
+
