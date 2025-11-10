@@ -26,3 +26,12 @@ else
   $(if (test "$(arch)" = "arm64"); then echo '/opt/homebrew/bin/'; else echo 'usr/local/bin/'; fi)/brew install git
 fi
 
+# multipass shoulbe install
+if (multipass version)
+then
+  echo "multipass already installed"
+else
+  echo "installing multipass"
+  $(if (test "$(arch)" = "arm64"); then echo '/opt/homebrew/bin/'; else echo 'usr/local/bin/'; fi)/brew install multipass
+fi
+ 
