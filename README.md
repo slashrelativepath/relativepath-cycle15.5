@@ -11,4 +11,10 @@ Darwin
 Linux
 `$SHELL linux-onboarding.sh`
 
+## Local VM
+Command to create a local VM
+`$SHELL create-vm.sh`
+
+Delete the local VM
+`$SHELL delete-vm.sh`
 
