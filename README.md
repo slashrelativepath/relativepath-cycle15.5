@@ -18,3 +18,5 @@ Command to create a local VM
 Delete the local VM
 `$SHELL delete-vm.sh`
 
+## Create webserver
+`$SHELL create-vm.sh && multipass transfer webserver.sh relativepath: && multipass shell relativepath`
