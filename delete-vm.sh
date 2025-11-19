@@ -1,4 +1,4 @@
 #delete the vm
-multipass delete relativepath --purge
+multipass delete ${VM:-relativepath} --purge
 
 multipass list

@@ -1,10 +1,10 @@
 # The instance (vm) named relativepath should exist
-if (multipass info relativepath)
+if (multipass info ${VM:-relativepath})
 then
-  echo "The instance relativepath already exists."
+  echo  "The instance ${VM:-relativepath} already exists."
 else
-  echo "Creating instance relativepath..."
-  multipass launch --name relativepath --cpus 4 --memory 4G --disk 25G
+  echo "Creating instance ${VM:-relativepath}..."
+  multipass launch --name ${VM:-relativepath} --cpus 1 --memory 1G --disk 10G
 fi
 
 
