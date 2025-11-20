@@ -1,0 +1,36 @@
+ 1  exit
+    2  curl -OJL https://git.kernel.org/torvalds/t/linux-6.18-rc6.tar.gz
+    3  man tar
+    4  ls -la
+    5  tar -xvf linux-6.18-rc6.tar.gz
+    6  ls
+    7  cd linux-6.18-rc6/
+    8  ls
+    9  cat kernel/
+   10  cd kernel/
+   11  cd ..
+   12  cat Makefile
+   13  make menuconfig
+   14  sudo apt install -y make
+   15  make menuconfig
+   16  apt-cache show build-essential
+   17  sudo apt install -y make build-essential
+   18  make menuconfig
+   19  sudo apt install -y make build-essential ncurses
+   20  sudo apt install -y make build-essential libncurses-dev
+   21  make menuconfig
+   22  sudo apt install -y make build-essential libncurses-dev flex
+   23  make menuconfig
+   24  sudo apt install -y make build-essential libncurses-dev flex bison
+   25  make menuconfig
+   26  ls -la
+   27  cat .config
+   28  cat .config | wc -l
+   29  nproc
+   30  man nproc
+   31  make -j"$(nproc)"
+   32  sudo apt install -y make build-essential libncurses-dev flex bison libssl-dev
+   33  make -j"$(nproc)"
+   34  sudo apt install -y make build-essential libncurses-dev flex bison libssl-dev libelf-dev
+   35  make -j"$(nproc)"
+   36  history
